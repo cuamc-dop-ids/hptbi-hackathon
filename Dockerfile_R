@@ -1,0 +1,27 @@
+################################################################################
+# HACKATHON USERS - Only edit the rows needed to install system dependencies and
+# additional R packages.
+#
+################################################################################
+##                HACKATHON USERS --- DO NOT EDIT THIS SECTION                ##
+FROM r-base:latest
+
+################################################################################
+## HACKATHON USERS - EDITS THE FOLLOWING LINES TO INSTLL NEEDED DEPENDENCIES  ##
+
+# system
+# RUN apt-get install -qy libxml2-dev
+
+## R packages
+RUN R --vanilla --quiet -e "install.packages('glmnet', repo = 'https://cran.rstudio.com')"
+
+################################################################################
+##                HACKATHON USERS --- DO NOT EDIT THIS SECTION                ##
+RUN mkdir /hackathon
+WORKDIR /hackathon
+
+CMD ["/bin/bash","runme_r.sh"]
+
+################################################################################
+##                                End of File                                 ##
+################################################################################

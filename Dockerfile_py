@@ -1,0 +1,29 @@
+################################################################################
+# HACKATHON USERS - Only edit the rows needed to install system dependencies and
+# additional R packages.
+#
+################################################################################
+##                HACKATHON USERS --- DO NOT EDIT THIS SECTION                ##
+FROM continuumio/miniconda3:latest
+
+RUN conda install -c conda-forge rpy2
+
+################################################################################
+## HACKATHON USERS - EDITS THE FOLLOWING LINES TO INSTLL NEEDED DEPENDENCIES  ##
+
+# system
+# RUN apt-get install -qy libxml2-dev
+
+RUN conda install pandas numpy
+RUN pip install sklearn
+
+################################################################################
+##                HACKATHON USERS --- DO NOT EDIT THIS SECTION                ##
+RUN mkdir /hackathon
+WORKDIR /hackathon
+
+CMD ["/bin/bash","runme_py.sh"]
+
+################################################################################
+##                                End of File                                 ##
+################################################################################

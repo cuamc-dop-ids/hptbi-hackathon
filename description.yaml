@@ -1,0 +1,14 @@
+title: "Your Hackathon Project Title"
+version: 0.1
+language: R
+author:
+- name: Peter E. DeWitt
+  email: peter.dewitt@cuanschutz.edu
+  github: dewittpe
+- name: Author Two
+  email: author.two@school.edu
+  github: author2
+description: >
+  This is where you can write a few sentences about your submission.  Modeling
+  approach, author contributions, etc.
+url: https://github.com/dewittpe/hackathon
