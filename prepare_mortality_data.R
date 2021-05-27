@@ -1,15 +1,15 @@
 ################################################################################
 # Prepare Mortality Data
 #
-# Define data procesing steps to apply to the data set used to train and test
+# Define data processing steps to apply to the data set used to train and test
 # models for predicting mortality.
 #
 # Args:
-#   training  (logicial) if the data set to read in is the training or testing
+#   training  (logical) if the data set to read in is the training or testing
 #             data set.
 #
 # Return:
-#   A data.frame with the defnined primary outcome and any user specific
+#   A data.frame with the defined primary outcome and any user specific
 #   elements needed for training and testing their model.
 #
 prepare_mortality_data <- function(training = TRUE) {
@@ -30,7 +30,7 @@ prepare_mortality_data <- function(training = TRUE) {
   # Omit some elements - FSS is omitted from this data set.  FSS could not be
   # assessed for patients who died.  To reduce confusion FSS related elements
   # are omitted as missing values for FSS are be highly correlated with
-  # mortalily.
+  # mortality.
   hackathon_mortality_data[-grep("fss", names(hackathon_mortality_data))]
 
   ##############################################################################

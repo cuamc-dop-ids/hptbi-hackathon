@@ -7,7 +7,7 @@
 FROM r-base:latest
 
 ################################################################################
-## HACKATHON USERS - EDITS THE FOLLOWING LINES TO INSTLL NEEDED DEPENDENCIES  ##
+## HACKATHON USERS - EDIT THE FOLLOWING LINES TO INSTALL NEEDED DEPENDENCIES  ##
 
 # system
 # RUN apt-get install -qy libxml2-dev

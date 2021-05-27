@@ -39,13 +39,13 @@ mortality_model <- function(data) {
 #           part of the hackathon.
 #
 # Return:
-#   A charcter vector of length equal to the nrow(newdata) with values
+#   A character vector of length equal to the nrow(newdata) with values
 #   "Mortality" and "Alive"
 #
 predict.hackathon_mortality_model <- function(object, newdata, ...) {
   
   ##############################################################################
-  # User Defined data preperation code starts here
+  # User Defined data preparation code starts here
 
   p <- stats::predict.glm(object, newdata, type = "response", ...)
   ifelse(p > 0.25, "Mortality", "Alive")

@@ -36,7 +36,7 @@ def mortality_model(data):
 def predict_mortality(model, newdata):
 
     ############################################################################
-    # User Defined data preperation code starts here
+    # User Defined data preparation code starts here
     xmat = newdata[["age", "female", "gcs_use", "icpyn1"]]
     p = model.predict_proba(xmat)
     return np.where(p[:, 1] > 0.25, "Mortality", "Alive")

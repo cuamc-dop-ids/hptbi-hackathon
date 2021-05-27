@@ -1,6 +1,6 @@
 ################################################################################
 # HACKATHON USERS - Only edit the rows needed to install system dependencies and
-# additional R packages.
+# additional Python packages.
 #
 ################################################################################
 ##                HACKATHON USERS --- DO NOT EDIT THIS SECTION                ##
@@ -9,7 +9,7 @@ FROM continuumio/miniconda3:latest
 RUN conda install -c conda-forge rpy2
 
 ################################################################################
-## HACKATHON USERS - EDITS THE FOLLOWING LINES TO INSTLL NEEDED DEPENDENCIES  ##
+## HACKATHON USERS - EDIT THE FOLLOWING LINES TO INSTALL NEEDED DEPENDENCIES  ##
 
 # system
 # RUN apt-get install -qy libxml2-dev

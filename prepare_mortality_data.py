@@ -36,7 +36,7 @@ def prepare_mortality_data(training = True):
     # Omit some elements - FSS is omitted from this data set.  FSS could not be
     # assessed for patients who died.  To reduce confusion FSS related elements
     # are omitted as missing values for FSS are be highly correlated with
-    # mortalily.
+    # mortality.
     #for c in hackathon_mortality_data.filter(regex = "fss").columns:
     #    hackathon_mortality_data = hackathon_mortality_data.drop(columns = c)
     hackathon_mortality_data = hackathon_mortality_data.filter(regex = "^(?!.*fss.*)")

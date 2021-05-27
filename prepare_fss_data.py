@@ -1,15 +1,15 @@
 ################################################################################
 # Prepare FSS Data
 #
-# Define data procesing steps to apply to the data set used to train and test
-# models for predicting fss.
+# Define data processing steps to apply to the data set used to train and test
+# models for predicting FSS.
 #
 # Args:
-#   training  (logicial) if the data set to read in is the training or testing
+#   training  (logical) if the data set to read in is the training or testing
 #             data set.
 #
 # Return:
-#   A pandas data.frame with the defnined primary outcome and any user specific
+#   A pandas data.frame with the defined primary outcome and any user-specific
 #   elements needed for training and testing their model.
 #
 
