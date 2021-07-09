@@ -31,7 +31,8 @@ prepare_mortality_data <- function(training = TRUE) {
   # assessed for patients who died.  To reduce confusion FSS related elements
   # are omitted as missing values for FSS are be highly correlated with
   # mortality.
-  hackathon_mortality_data[-grep("fss", names(hackathon_mortality_data))]
+  hackathon_mortality_data <-
+    hackathon_mortality_data[-grep("fss", names(hackathon_mortality_data))]
 
   ##############################################################################
   # User Defined Code starts here
