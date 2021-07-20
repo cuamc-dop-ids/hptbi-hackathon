@@ -14,7 +14,7 @@ RUN conda install -c conda-forge rpy2
 # system
 # RUN apt-get install -qy libxml2-dev
 
-RUN conda install pandas numpy
+RUN pip install pandas numpy
 RUN pip install sklearn
 
 ################################################################################
