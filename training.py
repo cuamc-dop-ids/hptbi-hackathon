@@ -6,7 +6,7 @@ import sys
 import time
 import pickle
 
-response = str(sys.argv[1])
+response = str(sys.argv[0])
 
 exec(open("prepare_" + response + "_data.py").read())
 exec(open(response + "_model.py").read())
