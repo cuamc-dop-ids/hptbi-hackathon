@@ -9,7 +9,6 @@ source("prepare_fss_data.R")
 source("mortality_model.R")
 source("fss_model.R")
 
-VERSION <- commandArgs(trailingOnly = TRUE)[1]
 USE_TESTING_DATA <- file.exists("./csvs/testing.csv")
 
 ################################################################################

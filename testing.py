@@ -8,7 +8,6 @@ import pickle
 import numpy
 import pathlib
 
-VERSION = str(sys.argv[0])
 testing_data = pathlib.Path("./csvs/testing.csv")
 USE_TESTING_DATA = testing_data.exists()
 
