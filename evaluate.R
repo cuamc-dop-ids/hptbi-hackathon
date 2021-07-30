@@ -91,7 +91,7 @@ report_assessment("F1 for mortality model on training data", ma_training$F1)
 if (USE_TESTING_DATA) {
   ma_testing <- mortality_assessments(observed_mortality_testing, predicted_mortality_testing)
 
-  if (isTRUE(VERSION == "v1.0")) {
+  if (isTRUE(grepl("^v1\\.\\d", VERSION))) {
     report_assessment("Accuracy for mortality model on testing data", ma_testing$ACCURACY)
     report_assessment("Sensitivity for mortality model on testing data", ma_testing$SENSITIVITY)
     report_assessment("Specificity for mortality model on testing data", ma_testing$SPECIFICITY)
@@ -125,7 +125,7 @@ if (USE_TESTING_DATA) {
   MEAN_AD <- mean(abs(observed_fss_testing - predicted_fss_testing))
   MAX_AD <- max(abs(observed_fss_testing - predicted_fss_testing))
 
-  if (isTRUE(VERSION == "v1.0")) {
+  if (isTRUE(grepl("^v1\\.\\d", VERSION))) {
     report_assessment("MSE for predicted FSS on testing data", MSE)
     report_assessment("Min abs difference in FSS prediction and observed on testing data", MIN_AD)
     report_assessment("Median abs difference in FSS prediction and observed on testing data", MEDIAN_AD)
